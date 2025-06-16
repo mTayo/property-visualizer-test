@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     "baseUrl": "./src",
     "paths": {
       "*": ["*"]
@@ -29,5 +30,5 @@
     "noUncheckedSideEffectImports": true
   },
   
-  "include": ["src/**/*"]
+  "include": ["src", "vite.config.ts"]
 }
