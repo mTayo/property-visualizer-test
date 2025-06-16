@@ -1,0 +1,17 @@
+@import "tailwindcss";
+.btn-black-container {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 0 0 #000,4px 4px 0 1px #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+
+  /* padding: 12px 24px; */
+  text-align: center;
+  text-transform: none;
+  border-radius: 8px;
+}
