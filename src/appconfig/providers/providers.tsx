@@ -1,5 +1,5 @@
 import { Provider as ReduxProvider } from "react-redux";
-import React, { type JSX } from "react";
+import  { type JSX } from "react";
 import store from "appconfig/redux-store";
 
 

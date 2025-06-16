@@ -1,5 +1,3 @@
-
-import React from 'react';
 import AnimateElement from 'components/common/AnimateElement';
 import { appData } from 'appconfig/data/data';
 import { useAppDispatch, useAppSelector } from 'appconfig/redux-store/hooks';

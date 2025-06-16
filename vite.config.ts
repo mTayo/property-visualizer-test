@@ -14,11 +14,11 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),         // optional alias
-      components: path.resolve(__dirname, 'src/components'),
-      pages: path.resolve(__dirname, 'src/pages'),
-      Layout: path.resolve(__dirname, 'src/Layout'),
-      appconfig: path.resolve(__dirname, 'src/appconfig'),
+      '@': path.resolve(__dirname, './src'),         // optional alias
+      components: path.resolve(__dirname, './src/components'),
+      pages: path.resolve(__dirname, './src/pages'),
+      Layout: path.resolve(__dirname, './src/Layout'),
+      appconfig: path.resolve(__dirname, './src/appconfig'),
     },
   },
 })
