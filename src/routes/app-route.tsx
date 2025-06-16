@@ -18,11 +18,7 @@ export const HomeRoutes = {
   children: [
     {
         path: '/',
-        element: <Navigate to="/home" replace />
-    },
-    {
-      path: "/home",
-      element: <HomePage />,
+        element: <HomePage />,
     },
     
   ],
