@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# 🏙️ Tower Explorer – Interactive Apartment Layout Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple frontend prototype that allows users to explore towers, view floors, and also view apartment layouts with  metadata and subtle animations.
 
-Currently, two official plugins are available:
+## 🔍 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🏢 Tower Overview
+- Displays 3 clickable tower cards: **Tower A**, **Tower B**, and **Tower C**
+- Responsive layout for mobile and desktop
 
-## Expanding the ESLint configuration
+### 🪜 Floor Selection
+- Upon selecting a tower, users see a vertical  list of **10–15 floors**
+- Each floor is clickable to reveal its apartments
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛏️ Apartment Layout View
+- Selecting a floor reveals **3–4 apartment units**
+- Each unit shows:
+  - 📸 **Thumbnail image** 
+  - 🏠 **Metadata**:
+    - Area (e.g., "120 sqm")
+    - Unit type (e.g., "2BHK")
+    - Room count (1 or 2)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🖼️ Detailed Layout View
+- Clicking a unit displays:
+  - A larger layout image
+  - Full metadata in a neatly styled layout
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌟 Bonus Interaction
+- **Hover effect on unit thumbnails**:
+  - Floor background subtly darkens
+  - Thumbnail image gently **scales up**
+  - Smooth transition with soft animation
+  - Responsive on both **desktop and mobile**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧱 Tech Stack
+- **React + Vite**
+- **TypeScript**
+- State management via **Redux toolkit**
+- **Tailwind CSS** 
+- Animations via  **Framer Motion**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🚀 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
