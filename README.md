@@ -2,6 +2,13 @@
 
 A simple frontend prototype that allows users to explore towers, view floors, and also view apartment layouts with  metadata and subtle animations.
 
+## 🧱 Tech Stack
+- **React + Vite**
+- **TypeScript**
+- State management via **Redux toolkit**
+- **Tailwind CSS** 
+- Animations via  **Framer Motion**
+
 ## 🔍 Features
 
 ### 🏢 Tower Overview
@@ -33,12 +40,7 @@ A simple frontend prototype that allows users to explore towers, view floors, an
   - Smooth transition with soft animation
   - Responsive on both **desktop and mobile**
 
-## 🧱 Tech Stack
-- **React + Vite**
-- **TypeScript**
-- State management via **Redux toolkit**
-- **Tailwind CSS** 
-- Animations via  **Framer Motion**
+
 
 ## 🚀 Getting Started
 
