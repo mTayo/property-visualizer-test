@@ -40,7 +40,7 @@ const HomePage = () => {
                         </AnimateElement>
                     ))}
                 </div>
-                {!activeTower && 'id' in activeTower && (
+                {!(activeTower && 'id' in activeTower) && (
                     <div className="mt-4">
                         <h1 className="font-bold text-center text-gray-500">Select a tower</h1>
                     </div>
