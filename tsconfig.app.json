@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    
+
     "baseUrl": "./src",
     "paths": {
       "*": ["*"]
@@ -20,6 +20,7 @@
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "noEmit": true,
+    "types": ["node"],
     
 
     /* Linting */
